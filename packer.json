@@ -28,7 +28,7 @@
     ],
     "variables": {
 		"image_name": "ecs-elasticsearch {{env `TRAVIS_BRANCH`}}",
-        "ecs_flavor":  "e3standard.x2",
+        "ecs_flavor":  "e3standard.x4",
         "ecs_region":  "nl-ams1",
         "ecs_tenant":  "{{env `OS_TENANT`}}",
         "ecs_username":  "{{env `OS_USERNAME`}}",
