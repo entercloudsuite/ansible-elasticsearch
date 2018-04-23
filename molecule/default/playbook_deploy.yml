@@ -6,4 +6,8 @@
   become_user: root
   hosts: all
   roles:
-    - { role: ansible-elasticsearch, es_instance_name: default }
+    - { role: ansible-elasticsearch, es_instance_name: default,
+        es_config: {
+          network.host: 0.0.0.0
+        }
+    }

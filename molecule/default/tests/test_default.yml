@@ -8,11 +8,11 @@ port:
   tcp:9200:
     listening: true
     ip:
-      - 127.0.0.1
+      - 0.0.0.0
   tcp:9300:
     listening: true
     ip:
-      - 127.0.0.1
+      - 0.0.0.0
 service:
   elasticsearch:
     enabled: false
