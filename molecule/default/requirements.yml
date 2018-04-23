@@ -1,3 +1,4 @@
 ---
 - src: elastic.elasticsearch
   version: 5.5.1
+- src: entercloudsuite.prometheus-exporter
