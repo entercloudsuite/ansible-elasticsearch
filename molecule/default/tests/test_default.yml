@@ -1,9 +1,5 @@
 ---
 package:
-  elasticsearch:
-    installed: true
-    versions:
-      - 5.5.1
 port:
   tcp:9200:
     listening: true
