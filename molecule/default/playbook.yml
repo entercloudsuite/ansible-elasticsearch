@@ -2,11 +2,10 @@
 
 - name: run the main role
   hosts: all
-  vars:
-    es_heap_size: 1g
   roles:
-    - { role: ansible-elasticsearch, es_instance_name: instance-1,
-        es_config: {
-          network.host: 0.0.0.0
-        }
-    }
+    - role: elastic.elasticsearch
+      es_instance_name: "node1"
+      es_enable_xpack: false
+    - role: geerlingguy.kibana
+      kibana_server_port: 5601
+      kibana_server_host: "0.0.0.0"
