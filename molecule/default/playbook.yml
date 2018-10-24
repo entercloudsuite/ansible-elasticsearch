@@ -5,6 +5,9 @@
     - role: elastic.elasticsearch
       es_instance_name: "node1"
       es_enable_xpack: false
+      es_config: {
+          network.host: 0.0.0.0
+      }
     - role: geerlingguy.kibana
       kibana_server_port: 5601
       kibana_server_host: "0.0.0.0"
