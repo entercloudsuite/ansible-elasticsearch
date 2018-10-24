@@ -1,7 +1,12 @@
 ---
-user:
+package:
   elasticsearch:
-    exists: true
-    groups:
-      - elasticsearch
+    installed: true
+
+port:
+  tcp:9200:
+    listening: true
+    ip:
+      - 0.0.0.0
+
 
