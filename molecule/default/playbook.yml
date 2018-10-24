@@ -1,5 +1,5 @@
 ---
-- name: run the main role 
+- name: run the main role
   hosts: all
   roles:
     - role: elastic.elasticsearch
