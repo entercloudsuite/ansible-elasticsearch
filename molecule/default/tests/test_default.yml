@@ -1,8 +1,4 @@
 ---
-package:
-  elasticsearch:
-    installed: true
-
 port:
   tcp:9200:
     listening: true
