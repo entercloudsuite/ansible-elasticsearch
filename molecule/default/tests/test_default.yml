@@ -1,13 +1,7 @@
 ---
-service:
-  elasticsearch:
-    enabled: false
-    running: false
 user:
   elasticsearch:
     exists: true
     groups:
       - elasticsearch
-group:
-  elasticsearch:
-    exists: true
+
