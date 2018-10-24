@@ -1,14 +1,4 @@
 ---
-package:
-port:
-  tcp:9200:
-    listening: true
-    ip:
-      - 0.0.0.0
-  tcp:9300:
-    listening: true
-    ip:
-      - 0.0.0.0
 service:
   elasticsearch:
     enabled: false
