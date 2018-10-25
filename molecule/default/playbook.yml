@@ -3,9 +3,10 @@
   hosts: all
   vars:
     es_api_host: "0.0.0.0"
+    es_instance_name: "node1"
+    es_enable_xpack: false
   roles:
     - role: ansible-elasticsearch
-      es_instance_name: "node1"
       es_enable_xpack: false
     - role: entercloudsuite.kibana
       kibana_server_port: 5601
