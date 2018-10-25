@@ -1,4 +1,4 @@
 ---
-- src: elastic.elasticsearch
-  version: 5.5.1
+- src: entercloudsuite.kibana
+  version: 1.0.0
 - src: entercloudsuite.prometheus-exporter
