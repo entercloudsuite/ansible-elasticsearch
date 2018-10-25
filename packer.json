@@ -32,6 +32,7 @@
 		"image_name": "ecs-elasticsearch {{env `TRAVIS_BRANCH`}}",
         "ecs_flavor":  "e3standard.x4",
         "ecs_region":  "nl-ams1",
+	"instance_name": "ecs-elasticsearch",
         "ecs_tenant":  "{{env `OS_TENANT`}}",
         "ecs_username":  "{{env `OS_USERNAME`}}",
         "ecs_password":  "{{env `OS_PASSWORD`}}",
