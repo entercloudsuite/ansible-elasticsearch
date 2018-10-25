@@ -1,7 +1,7 @@
 Ansible Role: Elasticsearch 
 ======================================
 
-[![Build Status](https://travis-ci.org/entercloudsuite/ansible-elasticsearch.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-elasticsearch
+[![Build Status](https://travis-ci.org/entercloudsuite/ansible-elasticsearch.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-elasticsearch)
 [![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.elasticsearch-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/elasticsearch)  
 
 Installs Elasticsearch on Ubuntu 16.04 (Xenial)
