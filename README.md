@@ -1,8 +1,8 @@
 Ansible Role: Elasticsearch 
 ======================================
 
-[![Build Status](https://travis-ci.org/entercloudsuite/ansible-haproxy.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-haproxy)
-[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.haproxy-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/haproxy)  
+[![Build Status](https://travis-ci.org/entercloudsuite/ansible-haproxy.svg?branch=master)](https://travis-ci.org/entercloudsuite/ansible-elasticsearch)
+[![Galaxy](https://img.shields.io/badge/galaxy-entercloudsuite.haproxy-blue.svg?style=flat-square)](https://galaxy.ansible.com/entercloudsuite/elasticsearch)  
 
 Installs Elasticsearch on Ubuntu 16.04 (Xenial)
 
@@ -20,7 +20,7 @@ Run with default vars:
 
     - hosts: all
       roles:
-        - { role: ansible-elasticsearch }
+        - { role: ansible-elasitcsearch }
 
 ## Testing
 
