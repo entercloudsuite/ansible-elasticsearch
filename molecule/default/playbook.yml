@@ -1,6 +1,25 @@
 ---
 - name: run the main role
   hosts: all
+  pre_tasks:
+    - name: update repositories cache
+      apt:
+        update_cache: yes
+    - package: name={{ item }} state=latest
+      with_items:
+        - curl
+        - jq
+        - iproute
+        - rsyslog
+        - ca-certificates
+        - sudo
+        - python-apt
+        - software-properties-common
+        - tar
+        - unzip
+        - bzip2
+        - gzip
+        - git
   vars:
     es_api_host: "0.0.0.0"
     es_instance_name: "node1"
