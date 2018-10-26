@@ -76,4 +76,4 @@
       shell: source {{ script_path }}/venv/bin/activate && ansible-galaxy install -f -p roles -r requirements.yml
       args:
         chdir: "{{ script_path }}"
-executable: /bin/bash
+        executable: /bin/bash
