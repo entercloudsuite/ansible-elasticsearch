@@ -80,7 +80,7 @@
     - name: create requirements.yml
       copy:
         content: |
-          - src: https://github.com/fnzv/ansible-elasticsearch
+          - src: entercloudsuite.elasticsearch
             version: "{{ lookup('env','TRAVIS_COMMIT') }}"
           - src: entercloudsuite.consul
             version: 1.0.1
