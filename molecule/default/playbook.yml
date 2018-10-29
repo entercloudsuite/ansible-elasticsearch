@@ -81,7 +81,7 @@
       copy:
         content: |
           - src: entercloudsuite.elasticsearch
-            version: "{{ lookup('env','TRAVIS_COMMIT') }}"
+            version: 1.0.2
           - src: entercloudsuite.consul
             version: 1.0.1
         dest: "{{ script_path }}/requirements.yml"
