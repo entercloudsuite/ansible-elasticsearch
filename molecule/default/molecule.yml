@@ -33,4 +33,4 @@ scenario:
     - verify
     - destroy
 verifier:
-name: goss
+  name: goss
