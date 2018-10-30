@@ -16,7 +16,7 @@ galaxy_info:
     - logs
 
 dependencies:
-  - { role: elastic.elasticsearch, version: 6.3.1 }
+  - { role: elastic.elasticsearch, version: 6.4.0 }
   # List your role dependencies here, one per line.
   # Be sure to remove the '[]' above if you add dependencies
   # to this list.
