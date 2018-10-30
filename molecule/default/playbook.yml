@@ -23,7 +23,8 @@
   vars:
     es_api_host: "0.0.0.0"
     es_instance_name: "node1"
-    es_enable_xpack: false
+    es_enable_xpack: true
+    es_xpack_features: ["monitoring"]
     prometheus_exporter_name: node_exporter
     prometheus_exporter_version: 0.16.0
   roles:
