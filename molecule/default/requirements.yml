@@ -3,4 +3,4 @@
   version: 1.0.1
 - src: entercloudsuite.prometheus-exporter
 - src: elastic.elasticsearch
-  version: 6.4.0
+  version: 6.4.2
