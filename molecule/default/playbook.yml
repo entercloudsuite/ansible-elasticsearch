@@ -29,12 +29,32 @@
     prometheus_exporter_version: 0.16.0
   roles:
     - role: ansible-elasticsearch
+    - role: entercloudsuite.consul
+      consul_version: 1.2.3
+      consul_packer_provision: true
+      consul_configs:
+        main:
+          bind_addr: 0.0.0.0
+          client_addr: 0.0.0.0
+          node_name: "{{ ansible_hostname }}"
+          data_dir: "{{ consul_data_dir }}"
+          encrypt: "K8n07GA/ZoANSmJ5zkvgOg=="
+          enable_syslog: true
+          datacenter: automium
+          server: true
+          ui: true
     - role: entercloudsuite.kibana
       kibana_server_port: 5601
       kibana_server_host: "0.0.0.0"
     - role: entercloudsuite.prometheus-exporter
       prometheus_exporter_name: node_exporter
       prometheus_exporter_version: 0.16.0
+    - role: entercloudsuite.prometheus-exporter
+      prometheus_exporter_name: elasticsearch_exporter
+      prometheus_exporter_version: 1.0.2
+      prometheus_github_username: justwatchcom
+      prometheus_exporter_config_flags:
+        '-es.uri': 'http://localhost:9200'
 - name: prepare virtualenv
   hosts: all
   tasks:
