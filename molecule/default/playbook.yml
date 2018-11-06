@@ -54,7 +54,7 @@
       prometheus_exporter_version: 1.0.2
       prometheus_github_username: justwatchcom
       prometheus_exporter_config_flags:
-        '-es.uri': 'http://localhost:9200'  
+        '-es.uri': 'http://localhost:9200'
 - name: prepare virtualenv
   hosts: all
   tasks:
