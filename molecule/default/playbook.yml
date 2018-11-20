@@ -114,7 +114,7 @@
         requirements: "{{ script_path }}/requirements.txt"
         virtualenv: "{{ script_path }}/venv"
     - name: install ansible roles
-      shell: source {{ script_path }}/venv/bin/activate && ansible-galaxy install -f -p roles -r requirements.yml
+      shell: source {{ script_path }}/venv/bin/activate && ansible-galaxy install -f -p roles -r {{ script_path }}/requirements.yml
       args:
         chdir: "{{ script_path }}"
         executable: /bin/bash
