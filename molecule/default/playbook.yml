@@ -100,19 +100,12 @@
     - name: create requirements.yml
       copy:
         content: |
-          - src: "https://github.com/{{ lookup('env','TRAVIS_REPO_SLUG') }}"
-            version: "{{ lookup('env','TRAVIS_COMMIT') }}"
-          - src: entercloudsuite.consul
-            version: 1.0.1
-        dest: "{{ script_path }}/requirements.yml"
-        remote_src: yes
-    - name: create requirements.yml
-      copy:
-        content: |
           - src: "https://github.com/{{ lookup('env','TRAVIS_PULL_REQUEST_SLUG') }}"
             version: "{{ lookup('env','TRAVIS_PULL_REQUEST_SHA') }}"
           - src: entercloudsuite.consul
             version: 1.0.1
+          - src: entercloudsuite.beats
+          - src: entercloudsuite.auditbeat
         dest: "{{ script_path }}/requirements.yml"
         remote_src: yes
       when: lookup('env','TRAVIS_PULL_REQUEST_SLUG') != ""
