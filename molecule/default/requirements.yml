@@ -3,5 +3,9 @@
   version: 1.0.1
 - src: entercloudsuite.prometheus-exporter
 - src: entercloudsuite.consul
+- src: entercloudsuite.beats
+  version: 1.0.0
+- src: entercloudsuite.auditbeat
+  version: 1.0.0
 - src: elastic.elasticsearch
   version: 6.4.0
