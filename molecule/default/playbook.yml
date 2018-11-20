@@ -107,7 +107,7 @@
           - src: entercloudsuite.beats
             version: 1.0.0
           - src: entercloudsuite.auditbeat
-            version: 1.0.0   
+            version: 1.0.0
         dest: "{{ script_path }}/requirements.yml"
         remote_src: yes
     - name: create requirements.yml
