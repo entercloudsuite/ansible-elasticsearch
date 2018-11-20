@@ -104,6 +104,10 @@
             version: "{{ lookup('env','TRAVIS_COMMIT') }}"
           - src: entercloudsuite.consul
             version: 1.0.1
+          - src: entercloudsuite.beats
+            version: 1.0.0
+          - src: entercloudsuite.auditbeat
+            version: 1.0.0   
         dest: "{{ script_path }}/requirements.yml"
         remote_src: yes
     - name: create requirements.yml
@@ -113,6 +117,10 @@
             version: "{{ lookup('env','TRAVIS_PULL_REQUEST_SHA') }}"
           - src: entercloudsuite.consul
             version: 1.0.1
+          - src: entercloudsuite.beats
+            version: 1.0.0
+          - src: entercloudsuite.auditbeat
+            version: 1.0.0   
         dest: "{{ script_path }}/requirements.yml"
         remote_src: yes
       when: lookup('env','TRAVIS_PULL_REQUEST_SLUG') != ""
