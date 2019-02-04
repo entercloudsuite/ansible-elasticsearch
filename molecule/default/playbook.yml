@@ -122,6 +122,8 @@
             version: 1.0.0
           - src: entercloudsuite.auditbeat
             version: 1.0.0
+          - src: entercloudsuite.kibana
+            version: 1.0.1
         dest: "{{ script_path }}/requirements.yml"
         remote_src: yes
       when: lookup('env','TRAVIS_PULL_REQUEST_SLUG') != ""
