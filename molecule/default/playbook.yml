@@ -113,27 +113,9 @@
             version: 1.0.1
           - src: entercloudsuite.elasticsearch
             version: 1.0.3
-        dest: "{{ script_path }}/requirements.yml"
-        remote_src: yes
-    - name: create requirements.yml
-      copy:
-        content: |
-          - src: "https://github.com/{{ lookup('env','TRAVIS_PULL_REQUEST_SLUG') }}"
-            version: "{{ lookup('env','TRAVIS_PULL_REQUEST_SHA') }}"
-          - src: entercloudsuite.consul
-            version: 1.0.1
-          - src: entercloudsuite.beats
-            version: 1.0.0
-          - src: entercloudsuite.auditbeat
-            version: 1.0.0
-          - src: entercloudsuite.kibana
-            version: 1.0.1
-          - src: entercloudsuite.elasticsearch
-            version: 1.0.3
           - src: entercloudsuite.prometheus-exporter
         dest: "{{ script_path }}/requirements.yml"
         remote_src: yes
-      when: lookup('env','TRAVIS_PULL_REQUEST_SLUG') != ""
     - name: install python requirements
       pip:
         requirements: "{{ script_path }}/requirements.txt"
